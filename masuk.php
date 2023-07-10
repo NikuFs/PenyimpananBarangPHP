@@ -38,6 +38,9 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Barang Keluar
                             </a>
+                            <a class="nav-link" href="about.php">
+                                About Us
+                            </a>
                             <a class="nav-link" href="logout.php">
                                 logout
                             </a>
@@ -192,7 +195,7 @@
                 <!-- Modal body -->
                 <form method="post">
                     <div class="modal-body">
-                        <select name="barangnya" class="form-control">
+                        <select name="barangnya" class="form-control" required>
                                 <?php
                                     $ambilsemuadatanya = mysqli_query($conn, "select * from stock");
                                     while($fectharray = mysqli_fetch_array($ambilsemuadatanya)){
